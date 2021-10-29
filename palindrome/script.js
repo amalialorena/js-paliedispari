@@ -15,9 +15,11 @@
 
 let userWord = prompt("inserisci una parola");
 
+function isPalindrome(word) {
+
 //Trasformare il valore della variabile x in un array -> .split('') salvandolo in una nuova variabile
 
-let wordArray = userWord.split('');
+let wordArray = word.split('');
 console.log(wordArray);
 
 //Usare il metodo reverse() per invertire l'ordine degli elementi al suo interno.
@@ -37,6 +39,13 @@ if(userWord === invertedWord) {
 }else{
     console.log("La parola non è palindroma");
 }
+
+}
+
+ isPalindrome(userWord);
+
+
+
 
 
 
