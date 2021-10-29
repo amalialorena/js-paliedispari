@@ -1,12 +1,11 @@
 // Pari e Dispari
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
-//creiamo 2 prompt
+// 2 prompt
     // uno chiede pari o dispari
     // l'altro chiede un numero all'utente
 
-// let pariDispari = prompt("scegli: pari o dispari");
+let pariDispari = prompt("scegli: pari o dispari");
 let numUtente = parseInt(prompt("scrivi un numero da 1 a 5"));
-
 
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 
@@ -16,8 +15,7 @@ function randomNum(){
 }
 
 let randNum = randomNum();
-console.log("il numero del pc è:", randNum);
-console.log("il numero dell'utente è:", numUtente);
+
 // Sommiamo i due numeri
 
 let sum = randomNum() + numUtente;
@@ -29,12 +27,24 @@ function oddEven(number) {
     if(number % 2 === 0){
         num = "pari";
     }else{
-        num = "dispari"
+        num = "dispari";
     }
     return num;
 }
 
 var result = oddEven(sum);
 
-console.log(result);
 // Dichiariamo chi ha vinto.
+
+if(pariDispari === "pari") {
+    console.log("Hai vinto!");
+}else if(pariDispari === "dispari"){
+    console.log("Hai perso!");
+}else{
+    console.log("Non hai scelto pari o dispari");
+}
+
+console.log("Hai scelto:", pariDispari)
+console.log("il numero del pc è:", randNum);
+console.log("il numero che hai scelto è:", numUtente);
+console.log("la somma dei numeri è:", result);
