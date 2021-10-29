@@ -35,6 +35,9 @@ function oddEven(number) {
 var result = oddEven(sum);
 
 // Dichiariamo chi ha vinto.
+// Se nel prompt l'utente ha scelto pari, ed il risultato della somma dei numeri è pari, l'utente ha vinto. 
+// Idem se ha scelto dispari ed il numero è dispari.
+// Se nel prompt non ha inserito le parole pari o dispari, facciamolo sapere all'utente. 
 
 if(pariDispari === "pari") {
     console.log("Hai vinto!");
